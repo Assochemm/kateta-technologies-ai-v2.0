@@ -1,0 +1,1 @@
+PLACEHOLDER: add your PNG/ICO/ICNS logo files here as renderer/assets/kateta-logo.png (or .ico/.icns)

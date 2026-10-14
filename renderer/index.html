@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kateta Technologies AI V2.0</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f6f8fa; }
+    .header { display:flex; align-items:center; gap:16px }
+    .logo { width:64px; height:64px; background:#e0e6ef; display:flex; align-items:center; justify-content:center; font-weight:bold }
+    .chat { margin-top:20px }
+    #messages { height:360px; overflow:auto; background:white; padding:12px; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,.08) }
+    .controls { margin-top:12px; display:flex; gap:8px }
+    input[type=text] { flex:1; padding:8px }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">Kateta</div>
+    <div>
+      <h1>Kateta Technologies AI V2.0</h1>
+      <div>Desktop assistant — enter your API key in settings</div>
+    </div>
+  </div>
+
+  <div class="chat">
+    <div id="messages">Welcome to Kateta Technologies AI V2.0 — start a chat.</div>
+    <div class="controls">
+      <input id="prompt" type="text" placeholder="Type a message..." />
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const messagesEl = document.getElementById('messages');
+    const promptEl = document.getElementById('prompt');
+    const sendBtn = document.getElementById('send');
+
+    function appendMessage(role, text) {
+      const el = document.createElement('div');
+      el.style.marginBottom = '8px';
+      el.innerHTML = '<strong>' + role + ':</strong> ' + text;
+      messagesEl.appendChild(el);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    sendBtn.addEventListener('click', () => {
+      const text = promptEl.value.trim();
+      if (!text) return;
+      appendMessage('You', text);
+      promptEl.value = '';
+      // Placeholder: in a full app, this would invoke the main process or fetch via backend
+      setTimeout(() => appendMessage('Kateta', 'This is a placeholder response. Enter your API key in Settings to enable live AI responses.'), 800);
+    });
+  </script>
+</body>
+</html>

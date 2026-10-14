@@ -1,0 +1,11 @@
+This product includes code derived from OpenGuider (https://github.com/mo-tunn/OpenGuider).
+Original copyright and license remain under Apache License 2.0.
+
+MODIFICATIONS:
+- Rebranded to "Kateta Technologies AI V2.0"
+- package.json: name, productName, author, appId updated
+- UI text: instances of "OpenGuider" replaced with "Kateta Technologies AI V2.0"
+- README, CONTRIBUTORS, CONTRIBUTING added by intersofthubtz
+
+MODIFIED-BY: intersofthubtz (Kateta Technologies)
+Date: 2026-10-14
