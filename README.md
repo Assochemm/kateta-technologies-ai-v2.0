@@ -1,6 +1,6 @@
 # Kateta Technologies AI V2.0
 
-![Kateta Technologies AI Logo](./renderer/assets/kateta-logo.png)
+![Kateta Technologies AI Logo](./renderer/assets/cover.png)
 
 Kateta Technologies AI V2.0 is a privacy-minded desktop AI companion built with Electron. This release is a rebranded distribution derived from OpenGuider and tailored by Kateta Technologies to provide an easy-to-use on‑desktop chat and assistant experience where users may supply their own API keys.
 
